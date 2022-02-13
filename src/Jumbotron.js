@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Jumbotron() {
   return (
-    <div>
+    <div className="small-devices-hidden">
       <div className="main-container">
         <div className="title-wrapper margin-left">
           <h1>

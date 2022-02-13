@@ -3,6 +3,7 @@ import React from "react"
 import Jumbotron from "./Jumbotron"
 import SocialSideBar from "./SocialSideBar";
 import FrontEndSection from "./FrontEndSection";
+import SmallDevicesWindow from "./SmallDevicesWindow";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Jumbotron />
       <FrontEndSection />
 
+      <SmallDevicesWindow />
     </div>
   );
 }

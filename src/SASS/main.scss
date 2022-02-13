@@ -36,6 +36,9 @@ h2, h2 *{
     font-weight: 450;
     font-size: $mid-font;
 }
+h3, h3 *{
+    font-size: 2.618rem;
+}
 
 
 
@@ -163,3 +166,15 @@ h2, h2 *{
 
 
 // --------------- / Side Bar Section ---------------
+
+
+
+
+// -----------------Phone Reset -----------------
+
+@media only screen and (max-width: 755px){
+    .small-devices-hidden{
+        display: none;
+    }
+    
+}
