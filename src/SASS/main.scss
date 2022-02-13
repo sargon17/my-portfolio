@@ -109,8 +109,9 @@ h1 > *{
 // --------------- Side Bar Section ---------------
 .side-bar{
     position: fixed;
-    left: 0;
-    top: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 
 
     background-color: $text-color-blue; //TEMPORARY
