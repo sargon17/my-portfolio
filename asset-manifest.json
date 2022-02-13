@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sargon17/my-portfolio/static/css/main.99a670f8.css",
-    "main.js": "/sargon17/my-portfolio/static/js/main.584a7a68.js",
-    "static/js/787.128fc6e9.chunk.js": "/sargon17/my-portfolio/static/js/787.128fc6e9.chunk.js",
-    "index.html": "/sargon17/my-portfolio/index.html",
-    "main.99a670f8.css.map": "/sargon17/my-portfolio/static/css/main.99a670f8.css.map",
-    "main.584a7a68.js.map": "/sargon17/my-portfolio/static/js/main.584a7a68.js.map",
-    "787.128fc6e9.chunk.js.map": "/sargon17/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.99a670f8.css",
+    "main.js": "/my-portfolio/static/js/main.c650fc38.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "index.html": "/my-portfolio/index.html",
+    "main.99a670f8.css.map": "/my-portfolio/static/css/main.99a670f8.css.map",
+    "main.c650fc38.js.map": "/my-portfolio/static/js/main.c650fc38.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99a670f8.css",
-    "static/js/main.584a7a68.js"
+    "static/js/main.c650fc38.js"
   ]
 }
