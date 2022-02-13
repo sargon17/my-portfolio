@@ -8,6 +8,7 @@ import gmail from "./img/gmail.svg";
 export default function SocialSideBar() {
   return (
     <div className="side-bar">
+        <h5>Contact me here:</h5>
       <ul>
         <li>
           <a href="https://instagram.com/tymofyeyev?utm_medium=copy_link">
