@@ -1,0 +1,38 @@
+*{
+    font-family: 'IBM Plex Mono', monospace;
+    font-feature-settings: 'salt' on;
+    font-size: 12px;
+}
+
+$text-color-black: #161616;
+$text-color-blue: #0F62FE;
+$text-color-grey: #E0E0E0;
+
+
+// General Stiles
+body{
+    background: white;
+    color: $text-color-black;
+}
+h1{
+    font-size: 6.84rem;
+}
+
+
+
+
+
+// Reusable Stiles
+.h1 > *{
+    font-size: 6.84rem;
+}
+.blue-color-text{
+    color: $text-color-blue;
+}
+
+
+// Reusable Components
+.html-code{
+    color: $text-color-grey;
+    font-weight: 400;
+}

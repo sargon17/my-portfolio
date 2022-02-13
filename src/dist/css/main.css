@@ -1,0 +1,29 @@
+* {
+  font-family: 'IBM Plex Mono', monospace;
+  -webkit-font-feature-settings: 'salt' on;
+          font-feature-settings: 'salt' on;
+  font-size: 12px;
+}
+
+body {
+  background: white;
+  color: #161616;
+}
+
+h1 {
+  font-size: 6.84rem;
+}
+
+.h1 > * {
+  font-size: 6.84rem;
+}
+
+.blue-color-text {
+  color: #0F62FE;
+}
+
+.html-code {
+  color: #E0E0E0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
