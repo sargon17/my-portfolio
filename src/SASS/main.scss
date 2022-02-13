@@ -55,6 +55,26 @@ h1 > *{
 .margin-left{
     margin-left: 10vw;
 }
+.cursor{
+    display: inline-block;
+    width: 4px;
+    height: 6rem;
+    background-color: $text-color-grey;
+    animation: cursor 1s infinite;
+
+}
+@keyframes cursor {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: $text-color-grey;
+    }
+    100%{
+        background-color: white;
+    }
+    
+}
 
 // --------------- / Reusable Stiles ---------------
 

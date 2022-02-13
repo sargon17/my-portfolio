@@ -47,6 +47,39 @@ h1 > * {
   margin-left: 10vw;
 }
 
+.cursor {
+  display: inline-block;
+  width: 4px;
+  height: 6rem;
+  background-color: #E0E0E0;
+  -webkit-animation: cursor 1s infinite;
+          animation: cursor 1s infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #E0E0E0;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #E0E0E0;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
