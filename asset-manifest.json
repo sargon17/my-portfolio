@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.99a670f8.css",
-    "main.js": "/my-portfolio/static/js/main.c650fc38.js",
+    "main.css": "/my-portfolio/static/css/main.9149de27.css",
+    "main.js": "/my-portfolio/static/js/main.ce21fb8d.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/instagram.svg": "/my-portfolio/static/media/instagram.7cd63fec81bbec662df55ca3db211e61.svg",
+    "static/media/gmail.svg": "/my-portfolio/static/media/gmail.97f6c6ee9131c0c04c94d0fc24dce464.svg",
+    "static/media/GitHub.svg": "/my-portfolio/static/media/GitHub.da948fb9e83c18f2b22c44c61fd1f39d.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.99a670f8.css.map": "/my-portfolio/static/css/main.99a670f8.css.map",
-    "main.c650fc38.js.map": "/my-portfolio/static/js/main.c650fc38.js.map",
+    "static/media/linkedin.svg": "/my-portfolio/static/media/linkedin.bf598a47a05538afdeb3953fa25519b9.svg",
+    "static/media/telegram.svg": "/my-portfolio/static/media/telegram.0c142bba93594dedc26b424e1a5f887e.svg",
+    "main.9149de27.css.map": "/my-portfolio/static/css/main.9149de27.css.map",
+    "main.ce21fb8d.js.map": "/my-portfolio/static/js/main.ce21fb8d.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99a670f8.css",
-    "static/js/main.c650fc38.js"
+    "static/css/main.9149de27.css",
+    "static/js/main.ce21fb8d.js"
   ]
 }
