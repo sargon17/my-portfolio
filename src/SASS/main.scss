@@ -60,7 +60,7 @@ h1 > *{
     width: 4px;
     height: 6rem;
     background-color: $text-color-grey;
-    animation: cursor 1s infinite;
+    animation: cursor .9s infinite;
 
 }
 @keyframes cursor {

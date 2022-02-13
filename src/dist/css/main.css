@@ -52,8 +52,8 @@ h1 > * {
   width: 4px;
   height: 6rem;
   background-color: #E0E0E0;
-  -webkit-animation: cursor 1s infinite;
-          animation: cursor 1s infinite;
+  -webkit-animation: cursor .9s infinite;
+          animation: cursor .9s infinite;
 }
 
 @-webkit-keyframes cursor {
