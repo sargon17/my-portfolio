@@ -41,7 +41,8 @@ h1{
 .align-center{
     align-items: center;
 }
-// / flex end
+// / flex 
+
 .height-100vh{
     height: 100vh;
 }
@@ -105,10 +106,20 @@ h1 > *{
 
 
 
-// --------------- First Section ---------------
+// --------------- Side Bar Section ---------------
+.side-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+
+
+    background-color: $text-color-blue; //TEMPORARY
+    width: 120px; // TEMPORARY
+    height: 400px; // TEMPORARY
+}
 
 
 
 
 
-// --------------- / First Section ---------------
+// --------------- / Side Bar Section ---------------
