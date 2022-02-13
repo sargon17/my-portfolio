@@ -2,37 +2,93 @@
     font-family: 'IBM Plex Mono', monospace;
     font-feature-settings: 'salt' on;
     font-size: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 $text-color-black: #161616;
 $text-color-blue: #0F62FE;
 $text-color-grey: #E0E0E0;
 
+$thin-text: 400;
+$bold-text: 700;
+
 
 // General Stiles
-body{
+
+
+body {
     background: white;
     color: $text-color-black;
 }
 h1{
     font-size: 6.84rem;
+    font-weight: $bold-text;
 }
 
 
 
 
 
-// Reusable Stiles
-.h1 > *{
+// --------------- Reusable Stiles ---------------
+
+// flex
+.flex-component{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+// / flex end
+.height-100vh{
+    height: 100vh;
+}
+
+h1 > *{
     font-size: 6.84rem;
 }
 .blue-color-text{
     color: $text-color-blue;
 }
+.margin-left{
+    margin-left: 10vw;
+}
+
+// --------------- / Reusable Stiles ---------------
 
 
-// Reusable Components
+
+
+
+// --------------- Reusable Components ---------------
+.main-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+}
+
+.title-wrapper{
+    max-width: 70vw;
+}
+
 .html-code{
     color: $text-color-grey;
     font-weight: 400;
 }
+// --------------- / Reusable Components ---------------
+
+
+
+
+
+
+// --------------- First Section ---------------
+
+
+
+
+
+// --------------- / First Section ---------------
