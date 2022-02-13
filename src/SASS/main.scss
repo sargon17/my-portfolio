@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 ul{
     list-style: none;
@@ -17,17 +18,23 @@ $text-color-grey: #E0E0E0;
 $thin-text: 400;
 $bold-text: 700;
 
+$big-font: 6.84rem;
+$mid-font: 4.236rem;
+
 
 // General Stiles
 
 
 body {
-    background: white;
     color: $text-color-black;
 }
-h1{
-    font-size: 6.84rem;
+h1, h1 *{
+    font-size: $big-font;
     font-weight: $bold-text;
+}
+h2, h2 *{
+    font-weight: 450;
+    font-size: $mid-font;
 }
 
 
@@ -47,10 +54,6 @@ h1{
 
 .height-100vh{
     height: 100vh;
-}
-
-h1 > *{
-    font-size: 6.84rem;
 }
 .blue-color-text{
     color: $text-color-blue;
@@ -79,6 +82,10 @@ h1 > *{
     
 }
 
+
+
+
+
 // --------------- / Reusable Stiles ---------------
 
 
@@ -89,7 +96,7 @@ h1 > *{
 .main-container{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     padding: 16px;
 }
 
@@ -101,6 +108,28 @@ h1 > *{
     color: $text-color-grey;
     font-weight: 400;
 }
+
+.btn-wrapper{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-wrapper a{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-chevron-down{
+    font-size: 30px;
+    transition: all .2s ease-out;
+    color: $text-color-blue;
+}
+.btn-wrapper a:hover .fa-chevron-down{
+    font-size: 38px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+} 
 // --------------- / Reusable Components ---------------
 
 
