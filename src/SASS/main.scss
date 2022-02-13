@@ -5,7 +5,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+}
+ul{
+    list-style: none;
 }
 
 $text-color-black: #161616;
@@ -109,14 +111,22 @@ h1 > *{
 // --------------- Side Bar Section ---------------
 .side-bar{
     position: fixed;
-    right: 0;
+    right: 20px;
     top: 50%;
     transform: translate(0, -50%);
-
-
-    background-color: $text-color-blue; //TEMPORARY
-    width: 120px; // TEMPORARY
-    height: 400px; // TEMPORARY
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.side-bar a{
+    height: 62px;
+    display: block;
+    padding: 6px;
+    border-radius: 8px;
+    transition: all .2s ease-out;
+}
+.side-bar a:hover{
+    transform: scale(1.2);
 }
 
 

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Jumbotron />
-      <SocialSideBar />
+      < SocialSideBar />
     </div>
   );
 }
