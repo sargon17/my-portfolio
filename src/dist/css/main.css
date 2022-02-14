@@ -209,7 +209,7 @@ h3, h3 * {
   }
 }
 
-@media only screen and (min-width: 755px) {
+@media only screen and (min-width: 754px) {
   .small-devices-show {
     display: none;
   }
