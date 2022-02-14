@@ -131,12 +131,44 @@ h3, h3 * {
   font-size: 30px;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
-  color: #0F62FE;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+  color: #E0E0E0;
 }
 
 .btn-wrapper a:hover .fa-chevron-down {
   font-size: 38px;
-  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  color: #0F62FE;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
 }
 
 .side-bar {
@@ -173,6 +205,12 @@ h3, h3 * {
 
 @media only screen and (max-width: 755px) {
   .small-devices-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 755px) {
+  .small-devices-show {
     display: none;
   }
 }
