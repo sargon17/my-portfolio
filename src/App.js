@@ -4,6 +4,7 @@ import Jumbotron from "./Jumbotron"
 import SocialSideBar from "./SocialSideBar";
 import FrontEndSection from "./FrontEndSection";
 import SmallDevicesWindow from "./SmallDevicesWindow";
+import MyStackSection from "./MyStackSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       < SocialSideBar />
       <Jumbotron />
       <FrontEndSection />
+      <MyStackSection />
 
       <SmallDevicesWindow />
     </div>

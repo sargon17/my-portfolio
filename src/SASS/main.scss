@@ -108,7 +108,7 @@ h3 * {
   a {
     padding: 10px;
     border-radius: 50%;
-    
+
     .fa-chevron-down {
       font-size: 30px;
       transition: all 0.2s ease-out;
@@ -122,7 +122,6 @@ h3 * {
     }
   }
 }
-
 
 @keyframes bounce {
   0%,
@@ -167,7 +166,29 @@ h3 * {
 
 // --------------- / Side Bar Section ---------------
 
+// --------------- Tecnology Stack Section ---------------
+.my-stack-section {
+  .stack-wrapper {
 
+    h3 {
+      margin: 2vh 0;
+      color: $text-color-blue;
+    }
+
+    ul {
+      li {
+        a {
+          display: block;
+          margin: 17px;
+          height: 48px + 17px * 2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// --------------- / Tecnology Stack Section ---------------
 
 // -----------------Phone Warning -----------------
 

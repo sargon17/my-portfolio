@@ -11,7 +11,7 @@ export default function FrontEndSection() {
         </div>
       </div>
       <div className="btn-wrapper">
-        <a href="#"> <i class="fa-solid fa-chevron-down"></i> </a>
+        <a href="#section3"> <i class="fa-solid fa-chevron-down"></i> </a>
       </div>
     </div>
   );

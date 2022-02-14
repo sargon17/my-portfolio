@@ -1,7 +1,7 @@
 * {
-  font-family: 'IBM Plex Mono', monospace;
-  -webkit-font-feature-settings: 'salt' on;
-          font-feature-settings: 'salt' on;
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-feature-settings: "salt" on;
+          font-feature-settings: "salt" on;
   font-size: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,17 +18,20 @@ body {
   color: #161616;
 }
 
-h1, h1 * {
+h1,
+h1 * {
   font-size: 6.84rem;
   font-weight: 700;
 }
 
-h2, h2 * {
+h2,
+h2 * {
   font-weight: 450;
   font-size: 4.236rem;
 }
 
-h3, h3 * {
+h3,
+h3 * {
   font-size: 2.618rem;
 }
 
@@ -49,7 +52,7 @@ h3, h3 * {
 }
 
 .blue-color-text {
-  color: #0F62FE;
+  color: #0f62fe;
 }
 
 .margin-left {
@@ -60,9 +63,9 @@ h3, h3 * {
   display: inline-block;
   width: 4px;
   height: 6rem;
-  background-color: #E0E0E0;
-  -webkit-animation: cursor .9s infinite;
-          animation: cursor .9s infinite;
+  background-color: #e0e0e0;
+  -webkit-animation: cursor 0.9s infinite;
+          animation: cursor 0.9s infinite;
 }
 
 @-webkit-keyframes cursor {
@@ -70,7 +73,7 @@ h3, h3 * {
     background-color: white;
   }
   50% {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
   }
   100% {
     background-color: white;
@@ -82,7 +85,7 @@ h3, h3 * {
     background-color: white;
   }
   50% {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
   }
   100% {
     background-color: white;
@@ -105,7 +108,7 @@ h3, h3 * {
 }
 
 .html-code {
-  color: #E0E0E0;
+  color: #e0e0e0;
   font-weight: 400;
 }
 
@@ -127,22 +130,26 @@ h3, h3 * {
   border-radius: 50%;
 }
 
-.fa-chevron-down {
+.btn-wrapper a .fa-chevron-down {
   font-size: 30px;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .btn-wrapper a:hover .fa-chevron-down {
   font-size: 38px;
-  color: #0F62FE;
+  color: #0f62fe;
 }
 
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -157,7 +164,11 @@ h3, h3 * {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -194,13 +205,25 @@ h3, h3 * {
   display: block;
   padding: 6px;
   border-radius: 8px;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .side-bar a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.my-stack-section .stack-wrapper h3 {
+  margin: 2vh 0;
+  color: #0f62fe;
+}
+
+.my-stack-section .stack-wrapper ul li a {
+  display: block;
+  margin: 17px;
+  height: 82px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 755px) {
