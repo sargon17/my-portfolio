@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.abbf780b.css",
-    "main.js": "/my-portfolio/static/js/main.ce5faa13.js",
+    "main.js": "/my-portfolio/static/js/main.346d90f3.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/sass-logo 1.svg": "/my-portfolio/static/media/sass-logo 1.6b3e13e426128c3b7f52ffcf845a4b25.svg",
     "static/media/adobe_creative-cloud.svg": "/my-portfolio/static/media/adobe_creative-cloud.e8442882e6c283166e728db0c9d1462f.svg",
@@ -23,11 +23,11 @@
     "static/media/css_3.svg": "/my-portfolio/static/media/css_3.423244119d23c2e590ad9077514b324c.svg",
     "static/media/html_5.svg": "/my-portfolio/static/media/html_5.fe5ec79f3d121628c6a5496e9ee0f08e.svg",
     "main.abbf780b.css.map": "/my-portfolio/static/css/main.abbf780b.css.map",
-    "main.ce5faa13.js.map": "/my-portfolio/static/js/main.ce5faa13.js.map",
+    "main.346d90f3.js.map": "/my-portfolio/static/js/main.346d90f3.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abbf780b.css",
-    "static/js/main.ce5faa13.js"
+    "static/js/main.346d90f3.js"
   ]
 }
