@@ -21,7 +21,7 @@ export default function MyStackSection() {
     <div className="small-devices-hidden my-stack-section" id="section3">
       <div className="main-container margin-left">
         <div>
-          <h2>My tecnology stack:</h2>
+          <h2>My tech stack:</h2>
           <div className="stack-wrapper">
             <h3>Design</h3>
             <ul className="flex-component">
