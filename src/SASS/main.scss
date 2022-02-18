@@ -19,6 +19,7 @@ $thin-text: 400;
 $bold-text: 700;
 
 $big-font: 6.84rem;
+$tablet-big-font: 5rem;
 $mid-font: 4.236rem;
 
 // General Stiles
@@ -169,18 +170,20 @@ h3 * {
 // --------------- Tecnology Stack Section ---------------
 .my-stack-section {
   .stack-wrapper {
-
     h3 {
-      margin: 2vh 0;
+      margin: 4vh 0 2vh 0;
       color: $text-color-blue;
     }
 
     ul {
+      width: 65vw;
+      flex-wrap: wrap;
+      gap: 34px;
       li {
         a {
           display: block;
-          margin: 17px;
-          height: 48px + 17px * 2;
+          // margin: 0px 17px;
+          height: 48px;
           cursor: pointer;
         }
       }
@@ -190,13 +193,32 @@ h3 * {
 
 // --------------- / Tecnology Stack Section ---------------
 
-// -----------------Phone Warning -----------------
-
-@media only screen and (max-width: 755px) {
-  .small-devices-hidden {
-    display: none;
+// ----------------- Media Queries -----------------
+// --------- Tablet --------
+/* Portrait and Landscape */
+@media only screen and (max-device-width: 1024px) {
+  h1,
+  h1 * {
+    font-size: $tablet-big-font;
+    font-weight: $bold-text;
   }
 }
+
+// --------- Phones --------
+
+@media only screen  
+  and (max-device-width: 812px) { 
+
+}
+
+
+// -----------------Phone Warning -----------------
+
+// @media only screen and (max-width: 755px) {
+//   .small-devices-hidden {
+//     display: none;
+//   }
+// }
 @media only screen and (min-width: 754px) {
   .small-devices-show {
     display: none;

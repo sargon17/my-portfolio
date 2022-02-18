@@ -215,20 +215,29 @@ h3 * {
 }
 
 .my-stack-section .stack-wrapper h3 {
-  margin: 2vh 0;
+  margin: 4vh 0 2vh 0;
   color: #0f62fe;
+}
+
+.my-stack-section .stack-wrapper ul {
+  width: 65vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 34px;
 }
 
 .my-stack-section .stack-wrapper ul li a {
   display: block;
-  margin: 17px;
-  height: 82px;
+  height: 48px;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 755px) {
-  .small-devices-hidden {
-    display: none;
+/* Portrait and Landscape */
+@media only screen and (max-device-width: 1024px) {
+  h1,
+  h1 * {
+    font-size: 5rem;
+    font-weight: 700;
   }
 }
 

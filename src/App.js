@@ -9,7 +9,7 @@ import MyStackSection from "./MyStackSection";
 function App() {
   return (
     <div className="App">
-      < SocialSideBar />
+      <SocialSideBar />
       <Jumbotron />
       <FrontEndSection />
       <MyStackSection />
