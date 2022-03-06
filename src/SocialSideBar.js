@@ -7,7 +7,7 @@ import gmail from "./img/gmail.svg";
 
 export default function SocialSideBar() {
   return (
-    <div className="side-bar  d-none d-sm-flex">
+    <div className="side-bar  d-none d-md-flex">
       <h5>Contact me here:</h5>
       <ul>
         <li>

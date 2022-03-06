@@ -20,7 +20,6 @@ $bold-text: 700;
 
 $big-font: 6.84rem;
 $tablet-big-font: 5rem;
-$mobile-big-font: 3.5rem;
 $mid-font: 4.236rem;
 
 // General Stiles
@@ -82,7 +81,7 @@ h3 * {
   display: flex;
   align-items: center;
   height: 90vh;
-  padding: 16px;
+  // padding: 16px;
 }
 
 .jumbotron__wrapper__title {
@@ -134,7 +133,7 @@ h3 * {
 // --------------- Jumbotron Section ---------------
 .jumbotron {
   .jumbotron__title__wrapper {
-    max-width: 70vw;
+    // max-width: 70vw;
   }
   &__title {
     line-height: 1.2em;
@@ -144,7 +143,7 @@ h3 * {
     }
     &__cursor {
       display: inline-block;
-      width: 4px;
+      width: 3px;
       height: 1.2em;
       background-color: $text-color-grey;
       animation: cursor 0.9s infinite;
@@ -218,7 +217,13 @@ h3 * {
 
 // --------- Phones --------
 
-@media only screen and (max-device-width: 650px) {
+@media (max-device-width: 650px) {
+  * {
+    font-size: 10px;
+  }
+
+  $mobile-big-font: 3rem !important;
+
   h1,
   h1 * {
     font-size: $mobile-big-font;
@@ -227,7 +232,7 @@ h3 * {
 
   .jumbotron {
     &__wrapper__title {
-      width: 90vw;
+      // width: 90vw;
     }
   }
   .side-bar {
@@ -260,8 +265,8 @@ h3 * {
 //     display: none;
 //   }
 // }
-@media only screen and (min-width: 754px) {
-  .small-devices-show {
-    display: none;
-  }
-}
+// @media only screen and (min-width: 754px) {
+//   .small-devices-show {
+//     display: none;
+//   }
+// }
