@@ -160,7 +160,7 @@ h3 * {
   right: 20px;
   top: 50%;
   transform: translate(0, -50%);
-  display: flex;
+  // display: flex;
   flex-flow: column;
   align-items: center;
 
@@ -231,21 +231,21 @@ h3 * {
     }
   }
   .side-bar {
-    position: fixed;
-    right: -200px;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  
+    // position: fixed;
+    // right: -200px;
+    // top: 50%;
+    // transform: translate(0, -50%);
+    // display: flex;
+    // flex-flow: column;
+    // align-items: center;
+
     a {
       height: 62px;
       display: block;
       padding: 6px;
       border-radius: 8px;
       transition: all 0.2s ease-out;
-  
+
       &:hover {
         transform: scale(1.2);
       }
