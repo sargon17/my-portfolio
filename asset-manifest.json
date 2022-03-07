@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.d7255b65.css",
-    "main.js": "/my-portfolio/static/js/main.6679a094.js",
+    "main.js": "/my-portfolio/static/js/main.b892390f.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/sass-logo 1.svg": "/my-portfolio/static/media/sass-logo 1.6b3e13e426128c3b7f52ffcf845a4b25.svg",
     "static/media/bootstrap.svg": "/my-portfolio/static/media/bootstrap.8d44a8f7e13829958a98583d0b52354d.svg",
@@ -24,11 +24,11 @@
     "static/media/css_3.svg": "/my-portfolio/static/media/css_3.423244119d23c2e590ad9077514b324c.svg",
     "static/media/html_5.svg": "/my-portfolio/static/media/html_5.fe5ec79f3d121628c6a5496e9ee0f08e.svg",
     "main.d7255b65.css.map": "/my-portfolio/static/css/main.d7255b65.css.map",
-    "main.6679a094.js.map": "/my-portfolio/static/js/main.6679a094.js.map",
+    "main.b892390f.js.map": "/my-portfolio/static/js/main.b892390f.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7255b65.css",
-    "static/js/main.6679a094.js"
+    "static/js/main.b892390f.js"
   ]
 }
