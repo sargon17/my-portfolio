@@ -2,16 +2,28 @@ import React from "react";
 
 export default function FrontEndSection() {
   return (
-    <div id="section2" className="small-devices-hidden">
-      <div className="main-container">
-        <div className="title-wrapper margin-left">
-          <h2>
-            I am a <span className="blue-color-text">Front-End</span> Web Developer
-          </h2>
+    <div id="section2">
+      <div className="container main-container">
+        <div className="row">
+          <div className="col-12 col-md-10">
+            <h2>
+              I am a <span className="blue-color-text">Front-End</span> Web
+              Developer
+            </h2>
+          </div>
         </div>
       </div>
-      <div className="btn-wrapper">
-        <a href="#section3"> <i class="fa-solid fa-chevron-down"></i> </a>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="btn-wrapper">
+              <a href="#section3">
+                {" "}
+                <i className="fa-solid fa-chevron-down"></i>{" "}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

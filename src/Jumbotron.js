@@ -5,7 +5,7 @@ export default function Jumbotron() {
     <div id="jumbotron">
       <div className="container main-container">
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-md-10">
             <h1 className="jumbotron__title">
               <span className="jumbotron__title__code">&lt;h1&gt;</span>Hello,
               my name is{" "}

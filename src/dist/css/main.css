@@ -219,14 +219,7 @@ h3 * {
   color: #0f62fe;
 }
 
-.my-stack-section .stack-wrapper ul {
-  width: 65vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 34px;
-}
-
-.my-stack-section .stack-wrapper ul li a {
+.my-stack-section .stack-wrapper a {
   display: block;
   height: 48px;
   cursor: pointer;
@@ -250,6 +243,14 @@ h3 * {
     font-size: 3rem !important;
     font-weight: 700;
   }
+  h2,
+  h2 * {
+    font-size: 2.5rem;
+  }
+  h3,
+  h3 * {
+    font-size: 2rem;
+  }
   .side-bar a {
     height: 62px;
     display: block;
@@ -261,6 +262,9 @@ h3 * {
   .side-bar a:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
+  }
+  .stack-img {
+    width: 36px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -186,18 +186,11 @@ h3 * {
       color: $text-color-blue;
     }
 
-    ul {
-      width: 65vw;
-      flex-wrap: wrap;
-      gap: 34px;
-      li {
-        a {
-          display: block;
-          // margin: 0px 17px;
-          height: 48px;
-          cursor: pointer;
-        }
-      }
+    a {
+      display: block;
+      // margin: 0px 17px;
+      height: 48px;
+      cursor: pointer;
     }
   }
 }
@@ -229,6 +222,14 @@ h3 * {
     font-size: $mobile-big-font;
     font-weight: $bold-text;
   }
+  h2,
+  h2 * {
+    font-size: 2.5rem;
+  }
+  h3,
+  h3 * {
+    font-size: 2rem;
+  }
 
   .jumbotron {
     &__wrapper__title {
@@ -255,6 +256,10 @@ h3 * {
         transform: scale(1.2);
       }
     }
+  }
+  .stack-img {
+    width: 36px;
+    // width: 12vw;
   }
 }
 
