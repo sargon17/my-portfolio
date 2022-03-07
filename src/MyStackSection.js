@@ -26,7 +26,7 @@ export default function MyStackSection() {
               <div className="row">
                 <div className="col">
                   <h3>Design</h3>
-                  <div className="flex-component row g-2">
+                  <div className="row g-2 g-md-4">
                     <div className="col-auto">
                       <a href="https://www.figma.com">
                         <img
