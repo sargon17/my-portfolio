@@ -17,7 +17,7 @@ import bootstrap from "./img/bootstrap.svg";
 export default function MyStackSection() {
   return (
     <div id="section3">
-      <div className="main-container">
+      <div className="mt__container">
         <div className="container">
           <div className="row"></div>
           <div className="row my-md-4">

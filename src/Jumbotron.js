@@ -3,7 +3,7 @@ import React from "react";
 export default function Jumbotron() {
   return (
     <div id="jumbotron">
-      <div className="container main-container">
+      <div className="container mt__container">
         <div className="row">
           <div className="col-12 col-md-10">
             <h1 className="jumbotron__title">

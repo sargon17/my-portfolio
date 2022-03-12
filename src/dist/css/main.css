@@ -35,6 +35,11 @@ h3 * {
   font-size: 2.618rem;
 }
 
+h4,
+h4 * {
+  font-size: 1.618rem;
+}
+
 .flex-component {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,18 +60,17 @@ h3 * {
   background-color: #393939;
 }
 
-.mt__contrast-filter {
-  -webkit-filter: opacity(0.5);
-          filter: opacity(0.5);
-  mix-blend-mode: difference;
-}
-
 .mt__t-color--blue {
   color: #0f62fe;
 }
 
 .mt__t-color--white {
   color: #ffffff;
+}
+
+.mt__t-font--plex-serif,
+.mt__t-font--plex-serif * {
+  font-family: "IBM Plex Serif", serif;
 }
 
 .margin-left {
@@ -97,13 +101,17 @@ h3 * {
   }
 }
 
-.main-container {
+.mt__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 90vh;
 }
 
@@ -237,6 +245,11 @@ h3 * {
   display: block;
   height: 48px;
   cursor: pointer;
+}
+
+.projects__image {
+  width: 100%;
+  height: 300px;
 }
 
 /* Portrait and Landscape */
