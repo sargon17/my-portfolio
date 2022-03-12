@@ -9,7 +9,7 @@ export default function Jumbotron() {
             <h1 className="jumbotron__title">
               <span className="jumbotron__title__code">&lt;h1&gt;</span>Hello,
               my name is{" "}
-              <span className="blue-color-text jumbotron__title__name">
+              <span className="mt__t-color--blue jumbotron__title__name">
                 Mykhaylo
               </span>
               <span className="jumbotron__title__code">&lt;/h1&gt;</span>

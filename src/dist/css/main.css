@@ -51,8 +51,22 @@ h3 * {
   height: 100vh;
 }
 
-.blue-color-text {
+.mt__bg-dark {
+  background-color: #393939;
+}
+
+.mt__contrast-filter {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  mix-blend-mode: difference;
+}
+
+.mt__t-color--blue {
   color: #0f62fe;
+}
+
+.mt__t-color--white {
+  color: #ffffff;
 }
 
 .margin-left {

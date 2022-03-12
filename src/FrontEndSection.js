@@ -2,12 +2,12 @@ import React from "react";
 
 export default function FrontEndSection() {
   return (
-    <div id="section2">
+    <div id="section2" className="mt__bg-dark">
       <div className="container main-container">
         <div className="row">
           <div className="col-12 col-md-10">
-            <h2>
-              I am a <span className="blue-color-text">Front-End</span> Web
+            <h2 className="mt__t-color--white">
+              I am a <span className="mt__t-color--blue">Front-End</span> Web
               Developer
             </h2>
           </div>

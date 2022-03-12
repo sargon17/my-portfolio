@@ -20,12 +20,12 @@ export default function MyStackSection() {
       <div className="main-container">
         <div className="container">
           <div className="row"></div>
-          <div className="row">
+          <div className="row my-md-4">
             <div className="col-12 col-md-10">
               <h2>My tech stack:</h2>
               <div className="row">
                 <div className="col">
-                  <h3>Design</h3>
+                  <h3 className="mt__t-color--blue">Design</h3>
                   <div className="row g-2 g-md-4">
                     <div className="col-auto">
                       <a href="https://www.figma.com">
@@ -75,9 +75,9 @@ export default function MyStackSection() {
                   </div>
                 </div>
               </div>
-              <div className="row">
+              <div className="row my-md-4">
                 <div className="col">
-                  <h3>Development</h3>
+                  <h3 className="mt__t-color--blue">Development</h3>
                   <div className="row g-2 g-md-4">
                     <div className="col-auto">
                       <a href="https://git-scm.com/">
