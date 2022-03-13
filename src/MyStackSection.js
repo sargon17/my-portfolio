@@ -171,7 +171,7 @@ export default function MyStackSection() {
         <div className="row">
           <div className="col">
             <div className="btn-wrapper">
-              <a href="#section3">
+              <a href="#latest_project-1">
                 {" "}
                 <i className="fa-solid fa-chevron-down"></i>{" "}
               </a>

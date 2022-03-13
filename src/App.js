@@ -3,8 +3,8 @@ import React from "react";
 import Jumbotron from "./Jumbotron";
 import SocialSideBar from "./SocialSideBar";
 import FrontEndSection from "./FrontEndSection";
-import SmallDevicesWindow from "./SmallDevicesWindow";
 import MyStackSection from "./MyStackSection";
+import LatestProjects from "./LatestProjects";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Jumbotron />
       <FrontEndSection />
       <MyStackSection />
+      <LatestProjects />
 
       {/* <SmallDevicesWindow /> */}
     </div>
