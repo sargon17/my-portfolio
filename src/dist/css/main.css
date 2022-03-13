@@ -189,6 +189,69 @@ h4 * {
   }
 }
 
+.mt__tag {
+  background: inherit;
+  border-radius: 10px;
+  font-size: 1.618rem;
+  padding: 0 1em;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mt__tag--blue {
+  color: #0f62fe;
+  border: 1px solid #0f62fe;
+}
+
+.mt__tag--blue:hover {
+  background: #0f62fe;
+  color: #ffffff;
+}
+
+.mt__tag--pink {
+  color: #ff006e;
+  border: 1px solid #ff006e;
+}
+
+.mt__tag--pink:hover {
+  background: #ff006e;
+  color: #ffffff;
+}
+
+.mt__tag--orange {
+  color: #fb5607;
+  border: 1px solid #fb5607;
+}
+
+.mt__tag--orange:hover {
+  background: #fb5607;
+  color: #ffffff;
+}
+
+.mt__tag--purple {
+  color: #8338ec;
+  border: 1px solid #8338ec;
+}
+
+.mt__tag--purple:hover {
+  background: #8338ec;
+  color: #ffffff;
+}
+
+.mt__tag--yellow {
+  color: #ffbe0b;
+  border: 1px solid #ffbe0b;
+}
+
+.mt__tag--yellow:hover {
+  background: #ffbe0b;
+  color: #ffffff;
+}
+
 .jumbotron__title {
   line-height: 1.2em;
 }

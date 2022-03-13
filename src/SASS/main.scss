@@ -18,6 +18,12 @@ $text-color-blue: #0f62fe;
 $text-color-grey: #e0e0e0;
 $text-color-white: #ffffff;
 
+$mt__blue: #0f62fe;
+$mt__pink: #ff006e;
+$mt__orange: #fb5607;
+$mt__purple: #8338ec;
+$mt__yellow: #ffbe0b;
+
 $thin-text: 400;
 $bold-text: 700;
 
@@ -63,6 +69,7 @@ h4 * {
 .height-100vh {
   height: 100vh;
 }
+
 .mt__bg-dark {
   background-color: $bg-dark;
 }
@@ -143,6 +150,57 @@ h4 * {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+.mt__tag {
+  background: inherit;
+  border-radius: 10px;
+  font-size: 1.618rem;
+  padding: 0 1em;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+
+  &--blue {
+    color: $mt__blue;
+    border: 1px solid $mt__blue;
+  }
+  &--blue:hover {
+    background: $mt__blue;
+    color: $text-color-white;
+  }
+  &--pink {
+    color: $mt__pink;
+    border: 1px solid $mt__pink;
+  }
+  &--pink:hover {
+    background: $mt__pink;
+    color: $text-color-white;
+  }
+  &--orange {
+    color: $mt__orange;
+    border: 1px solid $mt__orange;
+  }
+  &--orange:hover {
+    background: $mt__orange;
+    color: $text-color-white;
+  }
+  &--purple {
+    color: $mt__purple;
+    border: 1px solid $mt__purple;
+  }
+  &--purple:hover {
+    background: $mt__purple;
+    color: $text-color-white;
+  }
+  &--yellow {
+    color: $mt__yellow;
+    border: 1px solid $mt__yellow;
+  }
+  &--yellow:hover {
+    background: $mt__yellow;
+    color: $text-color-white;
   }
 }
 
