@@ -1,4 +1,5 @@
 import React from "react";
+import StackTag from "./StackTag";
 import train_img from "../src/img/train-ticket-project.png";
 
 export default function LatestProjects() {
@@ -46,31 +47,11 @@ export default function LatestProjects() {
               <div className="col">
                 <h4 className="mt__t-font--plex-serif">Tech stack:</h4>
                 <div className="row g-2">
-                  <div className="col col-auto">
-                    <a href="#" className="mt__tag mt__tag--pink">
-                      Figma
-                    </a>
-                  </div>
-                  <div className="col col-auto">
-                    <a href="#" className="mt__tag mt__tag--orange">
-                      HTML5
-                    </a>
-                  </div>
-                  <div className="col col-auto">
-                    <a href="#" className="mt__tag mt__tag--blue">
-                      CSS3
-                    </a>
-                  </div>
-                  <div className="col col-auto">
-                    <a href="#" className="mt__tag mt__tag--purple">
-                      Bootstrap
-                    </a>
-                  </div>
-                  <div className="col col-auto">
-                    <a href="#" className="mt__tag mt__tag--yellow">
-                      JavaScript
-                    </a>
-                  </div>
+                  <StackTag style="pink" tech="Figma" />
+                  <StackTag style="orange" tech="HTML5" />
+                  <StackTag style="blue" tech="CSS3" />
+                  <StackTag style="purple" tech="Bootstrap" />
+                  <StackTag style="yellow" tech="JavaScript" />
                 </div>
               </div>
             </div>
