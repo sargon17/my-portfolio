@@ -80,7 +80,7 @@ export default function LatestProjects() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="btn-wrapper">
+            <div className="btn-wrapper btn-wrapper--none">
               <a href="#section3">
                 <i className="fa-solid fa-chevron-down"></i>
               </a>

@@ -122,6 +122,12 @@ h4 * {
   align-items: center;
   justify-content: center;
 
+  &--none {
+    a {
+      display: none;
+    }
+  }
+
   a {
     padding: 10px;
     border-radius: 50%;
@@ -369,3 +375,9 @@ h4 * {
 //     display: none;
 //   }
 // }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) {
+  .side-bar {
+    display: none;
+  }
+}
