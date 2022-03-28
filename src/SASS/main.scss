@@ -264,6 +264,9 @@ h4 * {
       transform: scale(1.2);
     }
   }
+  &-title {
+    mix-blend-mode: difference;
+  }
 }
 
 // --------------- / Side Bar Section ---------------
