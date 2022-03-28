@@ -299,8 +299,12 @@ h4 * {
           align-items: center;
 }
 
+.side-bar__item {
+  mix-blend-mode: color-burn !important;
+}
+
 .side-bar a {
-  height: 62px;
+  aspect-ratio: 1;
   display: block;
   padding: 6px;
   border-radius: 8px;
@@ -309,8 +313,8 @@ h4 * {
 }
 
 .side-bar a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .my-stack-section .stack-wrapper h3 {
