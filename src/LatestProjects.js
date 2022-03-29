@@ -10,7 +10,7 @@ function getProjects(projects) {
     index++;
     console.log(projects);
     return (
-      <div id={projectId}>
+      <div id={projectId} className="mt__scroll">
         <div className="container mt__container projects">
           <div className="row my-2 my-lg-5">
             <div className="col">

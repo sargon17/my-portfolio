@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FrontEndSection() {
   return (
-    <div id="section2" className="mt__bg-dark">
+    <div id="section2" className="mt__bg-dark mt__scroll">
       <div className="container mt__container">
         <div className="row">
           <div className="col-12 col-md-10">

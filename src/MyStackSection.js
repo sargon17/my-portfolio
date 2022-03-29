@@ -18,7 +18,7 @@ function getStack(stack) {
 
 export default function MyStackSection() {
   return (
-    <div id="section3">
+    <div id="section3" className="mt__scroll">
       <div className="mt__container">
         <div className="container">
           <div className="row"></div>

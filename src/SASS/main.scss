@@ -7,6 +7,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+.App {
+  scroll-snap-type: y mandatory;
+}
 ul {
   list-style: none;
 }
@@ -109,7 +112,12 @@ h4 * {
   flex-direction: column;
   justify-content: center;
   height: 90vh;
+
   // padding: 16px;
+}
+.mt__scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .jumbotron__wrapper__title {
