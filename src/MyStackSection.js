@@ -1,4 +1,6 @@
 import React from "react";
+import TechLogo from "./techLogo";
+import stackData from "./stackData.js";
 import figma from "./img/figma.svg";
 import adobe from "./img/adobe_creative-cloud.svg";
 import photoshop from "./img/adobe_photoshop.svg";
@@ -13,6 +15,21 @@ import vsc_logo from "./img/vs_code.svg";
 import wordpress_logo from "./img/wordpress.svg";
 import sass_logo from "./img/sass-logo 1.svg";
 import bootstrap from "./img/bootstrap.svg";
+import vue from "./img/vue-icon.svg";
+
+function getStack(stack) {
+  let stackLogo = stack.map((item) => {
+    return (
+      <TechLogo
+        name={item.name}
+        link={item.link}
+        img={item.img}
+        key={item.name}
+      />
+    );
+  });
+  return stackLogo;
+}
 
 export default function MyStackSection() {
   return (
@@ -27,51 +44,7 @@ export default function MyStackSection() {
                 <div className="col">
                   <h3 className="mt__t-color--blue">Design</h3>
                   <div className="row g-2 g-md-4">
-                    <div className="col-auto">
-                      <a href="https://www.figma.com">
-                        <img
-                          src={figma}
-                          alt="figma logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://www.adobe.com/creativecloud.html">
-                        <img
-                          src={adobe}
-                          alt="adobe logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://www.adobe.com/products/photoshop.html">
-                        <img
-                          src={photoshop}
-                          alt="photoshop logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://www.adobe.com/products/illustrator.html">
-                        <img
-                          src={illustrator}
-                          alt="illustrator logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://www.adobe.com/products/photoshop-lightroom.html">
-                        <img
-                          src={lightroom}
-                          alt="lightroom logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
+                    {getStack(stackData.design)}
                   </div>
                 </div>
               </div>
@@ -79,87 +52,7 @@ export default function MyStackSection() {
                 <div className="col">
                   <h3 className="mt__t-color--blue">Development</h3>
                   <div className="row g-2 g-md-4">
-                    <div className="col-auto">
-                      <a href="https://git-scm.com/">
-                        <img
-                          src={git_logo}
-                          alt="git logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                        <img
-                          src={html_logo}
-                          alt="html logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                        <img
-                          src={css_logo}
-                          alt="css logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                        <img
-                          src={js_logo}
-                          alt="javascript logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://reactjs.org/">
-                        <img
-                          src={react_logo}
-                          alt="react logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://code.visualstudio.com/">
-                        <img
-                          src={vsc_logo}
-                          alt="vsc_logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://sass-lang.com/">
-                        <img
-                          src={sass_logo}
-                          alt="sass_logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://getbootstrap.com/">
-                        <img
-                          src={bootstrap}
-                          alt="bootstrap logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
-                    <div className="col-auto">
-                      <a href="https://wordpress.org/">
-                        <img
-                          src={wordpress_logo}
-                          alt="wordpress logo"
-                          className="stack-img"
-                        ></img>
-                      </a>
-                    </div>
+                    {getStack(stackData.development)}
                   </div>
                 </div>
               </div>
