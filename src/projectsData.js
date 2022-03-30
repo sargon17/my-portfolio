@@ -9,7 +9,7 @@ const projects = [
     img: font_ratio_img,
     subtitle: "Personal project.",
     text: "Web app made with vanilla JavaScript, which calculates the ratio of the font size of the text in the input field, created for web designer & developers. Fully responsive & designed by Me.",
-    liveLink: "sargon17.github.io/font-ratio/",
+    liveLink: "https://sargon17.github.io/font-ratio/",
     githubLink: "https://github.com/sargon17/font-ratio",
     tech: [
       {
