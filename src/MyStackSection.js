@@ -1,6 +1,6 @@
 import React from "react";
 import TechLogo from "./techLogo";
-import stackData from "./stackData.js";
+import stackData from "./data/stackData.js";
 
 function getStack(stack) {
   let stackLogo = stack.map((item) => {

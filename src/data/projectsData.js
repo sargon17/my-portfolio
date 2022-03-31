@@ -1,6 +1,6 @@
-import train_img from "../src/img/train-ticket-project.png";
-import font_ratio_img from "../src/img/font-ratio-project.jpg";
-import mine_field_img from "../src/img/mine-field-project.png";
+import train_img from "../img/train-ticket-project.png";
+import font_ratio_img from "../img/font-ratio-project.jpg";
+import mine_field_img from "../img/mine-field-project.png";
 
 const projects = [
   {

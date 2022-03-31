@@ -1,18 +1,18 @@
-import figma from "./img/figma.svg";
-import adobe from "./img/adobe_creative-cloud.svg";
-import photoshop from "./img/adobe_photoshop.svg";
-import illustrator from "./img/adobe_illustrator.svg";
-import lightroom from "./img/adobe_lightroom.svg";
-import git_logo from "./img/Component 1.svg";
-import html_logo from "./img/html_5.svg";
-import css_logo from "./img/css_3.svg";
-import js_logo from "./img/js.svg";
-import react_logo from "./img/react.svg";
-import vsc_logo from "./img/vs_code.svg";
-import wordpress_logo from "./img/wordpress.svg";
-import sass_logo from "./img/sass-logo 1.svg";
-import bootstrap from "./img/bootstrap.svg";
-import vue from "./img/vue-icon.svg";
+import figma from "../img/figma.svg";
+import adobe from "../img/adobe_creative-cloud.svg";
+import photoshop from "../img/adobe_photoshop.svg";
+import illustrator from "../img/adobe_illustrator.svg";
+import lightroom from "../img/adobe_lightroom.svg";
+import git_logo from "../img/Component 1.svg";
+import html_logo from "../img/html_5.svg";
+import css_logo from "../img/css_3.svg";
+import js_logo from "../img/js.svg";
+import react_logo from "../img/react.svg";
+import vsc_logo from "../img/vs_code.svg";
+import wordpress_logo from "../img/wordpress.svg";
+import sass_logo from "../img/sass-logo 1.svg";
+import bootstrap from "../img/bootstrap.svg";
+import vue from "../img/vue-icon.svg";
 
 const stackData = {
   design: [

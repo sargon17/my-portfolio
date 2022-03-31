@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import projects from "./projectsData.js";
+import projects from "./data/projectsData.js";
 
 function getProjects(projects) {
   let index = 1;
