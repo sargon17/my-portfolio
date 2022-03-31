@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.714f040e.css",
-    "main.js": "/my-portfolio/static/js/main.9097675a.js",
+    "main.js": "/my-portfolio/static/js/main.75b7e603.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/train-ticket-project.png": "/my-portfolio/static/media/train-ticket-project.8e4043ec0da6f03e464c.png",
     "static/media/font-ratio-project.jpg": "/my-portfolio/static/media/font-ratio-project.d11cf5ea580dd225bc2e.jpg",
@@ -28,11 +28,11 @@
     "static/media/html_5.svg": "/my-portfolio/static/media/html_5.fe5ec79f3d121628c6a5496e9ee0f08e.svg",
     "static/media/vue-icon.svg": "/my-portfolio/static/media/vue-icon.4f0d5b0afbfed938c636a902b56d67c0.svg",
     "main.714f040e.css.map": "/my-portfolio/static/css/main.714f040e.css.map",
-    "main.9097675a.js.map": "/my-portfolio/static/js/main.9097675a.js.map",
+    "main.75b7e603.js.map": "/my-portfolio/static/js/main.75b7e603.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.714f040e.css",
-    "static/js/main.9097675a.js"
+    "static/js/main.75b7e603.js"
   ]
 }
