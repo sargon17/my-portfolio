@@ -23,7 +23,6 @@ window.addEventListener("wheel", function (e) {
     }
   } else {
     let difference = currentPosition % windowHight;
-    console.log("difference", difference);
     if (e.deltaY > 0) {
       this.window.scrollTo({
         top: this.window.scrollY + (windowHight - difference),
@@ -33,15 +32,6 @@ window.addEventListener("wheel", function (e) {
         top: this.window.scrollY - difference,
       });
     }
-    // } else if (e.deltaY < 0 && difference > windowHight / 2) {
-    //   this.window.scrollTo({
-    //     top: this.window.scrollY - (windowHight - difference),
-    //   });
-    // } else {
-    //   this.window.scrollTo({
-    //     top: this.window.scrollY + (windowHight + difference),
-    //   });
-    // }
   }
 });
 
@@ -53,8 +43,6 @@ function App() {
       <FrontEndSection />
       <MyStackSection />
       <LatestProjects />
-
-      {/* <SmallDevicesWindow /> */}
     </div>
   );
 }
