@@ -335,6 +335,89 @@ h4 * {
   width: 100%;
 }
 
+.projects__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+  gap: 20vw;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.mt__projects__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.project {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+}
+
+.mt__projects__index-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 23px;
+}
+
+.mt__projects__index-dot {
+  width: 10px;
+  aspect-ratio: 1;
+  background: #c6daff;
+  border-radius: 50%;
+}
+
+.mt__projects__index-dot--active {
+  background: #0f62fe;
+}
+
+.mt__control-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+}
+
+.mt__control-btn:hover {
+  background: #c6daff;
+}
+
 /* Portrait and Landscape */
 @media only screen and (max-device-width: 1024px) {
   h1,

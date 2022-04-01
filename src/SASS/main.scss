@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 .App {
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
 }
 ul {
   list-style: none;
@@ -22,6 +22,8 @@ $text-color-grey: #e0e0e0;
 $text-color-white: #ffffff;
 
 $mt__blue: #0f62fe;
+$mt__light-blue: #c6daff;
+
 $mt__pink: #ff006e;
 $mt__orange: #fb5607;
 $mt__purple: #8338ec;
@@ -114,10 +116,6 @@ h4 * {
   height: 90vh;
 
   // padding: 16px;
-}
-.mt__scroll {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 .jumbotron__wrapper__title {
@@ -308,6 +306,60 @@ h4 * {
     // height: 300px;
   }
 }
+.projects__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  gap: 20vw;
+  z-index: 1;
+  padding: 0 10px;
+}
+.mt__projects__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+.project {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.mt__projects__index-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+}
+
+.mt__projects__index-dot {
+  width: 10px;
+  aspect-ratio: 1;
+  background: $mt__light-blue;
+  border-radius: 50%;
+}
+.mt__projects__index-dot--active {
+  background: $mt__blue;
+}
+
+.mt__control-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+}
+.mt__control-btn:hover {
+  // transform: scale(1.2);
+  background: $mt__light-blue;
+}
+
 // --------------- / Projects Section ---------------
 
 // ----------------- Media Queries -----------------
