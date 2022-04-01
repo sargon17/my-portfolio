@@ -1,8 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import projects from "./data/projectsData.js";
-import left from "./img/chevron-left.svg";
-import right from "./img/chevron-right.svg";
+import NavigationController from "./Components/navigationController";
 
 function getProjects(projects) {
   let index = 0;
@@ -37,19 +36,7 @@ export default function LatestProjects() {
           </div>
         </div>
         <div className="projects__row">{getProjects(projects)}</div>
-        <div className="mt__projects__control">
-          <div className="mt__control-btn">
-            <img src={left} alt="left" />
-          </div>
-          <div className="mt__projects__index-dots">
-            <div className="mt__projects__index-dot mt__projects__index-dot--active"></div>
-            <div className="mt__projects__index-dot"></div>
-            <div className="mt__projects__index-dot"></div>
-          </div>
-          <div className="mt__control-btn">
-            <img src={right} alt="right" />
-          </div>
-        </div>
+        <NavigationController items={projects.length} />
       </div>
       <div className="container">
         <div className="row">
