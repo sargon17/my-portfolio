@@ -1,15 +1,27 @@
 import react, { useState } from "react";
+
 import left from "../img/chevron-left.svg";
 import right from "../img/chevron-right.svg";
 
 export default function NavigationController(props) {
   const [current, setCurrent] = useState(1);
 
+
   const handleClick = (e) => {
     if (current + e < props.items + 1 && current + e > 0) {
       setCurrent(current + e);
+    } else if (current + e > props.items) {
+      setCurrent(1);
+    } else if (current + e < 1) {
+      setCurrent(props.items);
     }
   };
+
+  // const handleVisibility = () => {
+  //   const timer = setInterval(() => {
+  //     document.querySelector("#btn-right").click();
+  //   }, 4000);
+  // };
 
   function dotsNumber(number) {
     let dots = [];

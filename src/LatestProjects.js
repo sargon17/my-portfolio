@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "./Project";
 import projects from "./data/projectsData.js";
 import NavigationController from "./Components/navigationController";
@@ -25,8 +25,19 @@ function getProjects(projects) {
 }
 
 export default function LatestProjects(props) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleVisibility = (state) => {
+    setIsVisible(state);
+  };
+
   return (
-    <div className="mt__scroll" id={`page-${props.position}`}>
+    <div
+      className="mt__scroll"
+      id={`page-${props.position}`}
+      onMouseEnter={() => handleVisibility(true)}
+      onMouseLeave={() => handleVisibility(false)}
+    >
       <div className="container mt__container projects">
         <div className="row my-2 my-lg-5">
           <div className="col">
