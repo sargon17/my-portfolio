@@ -24,9 +24,9 @@ function getProjects(projects) {
   return project;
 }
 
-export default function LatestProjects() {
+export default function LatestProjects(props) {
   return (
-    <div className="mt__scroll">
+    <div className="mt__scroll" id={`page-${props.position}`}>
       <div className="container mt__container projects">
         <div className="row my-2 my-lg-5">
           <div className="col">
@@ -37,17 +37,6 @@ export default function LatestProjects() {
         </div>
         <div className="projects__row">{getProjects(projects)}</div>
         <NavigationController items={projects.length} />
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="btn-wrapper opacity-0">
-              <a href="#">
-                <i className="fa-solid fa-chevron-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

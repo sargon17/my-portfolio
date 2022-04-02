@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Jumbotron() {
+export default function Jumbotron(props) {
   return (
-    <div id="jumbotron" className="mt__scroll">
+    <div id={`page-${props.position}`} className="mt__scroll">
       <div className="container mt__container">
         <div className="row">
           <div className="col-12 col-md-10">
@@ -17,13 +17,6 @@ export default function Jumbotron() {
             </h1>
           </div>
         </div>
-      </div>
-
-      <div className="btn-wrapper">
-        <a href="#section2">
-          {" "}
-          <i class="fa-solid fa-chevron-down"></i>{" "}
-        </a>
       </div>
     </div>
   );

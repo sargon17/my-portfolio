@@ -16,9 +16,9 @@ function getStack(stack) {
   return stackLogo;
 }
 
-export default function MyStackSection() {
+export default function MyStackSection(props) {
   return (
-    <div id="section3" className="mt__scroll">
+    <div id={`page-${props.position}`} className="mt__scroll">
       <div className="mt__container">
         <div className="container">
           <div className="row"></div>
@@ -41,18 +41,6 @@ export default function MyStackSection() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="btn-wrapper">
-              <a href="#latest_project-1">
-                {" "}
-                <i className="fa-solid fa-chevron-down"></i>{" "}
-              </a>
             </div>
           </div>
         </div>

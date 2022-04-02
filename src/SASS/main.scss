@@ -7,9 +7,6 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-.App {
-  // scroll-snap-type: y mandatory;
-}
 ul {
   list-style: none;
 }
@@ -113,20 +110,22 @@ h4 * {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
-
-  // padding: 16px;
+  height: 100vh;
 }
 
 .jumbotron__wrapper__title {
   max-width: 70vw;
 }
 
-.btn-wrapper {
+.mt__next-section__btn-wrapper {
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
   &--none {
     a {

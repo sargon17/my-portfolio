@@ -5,6 +5,7 @@ import SocialSideBar from "./SocialSideBar";
 import FrontEndSection from "./FrontEndSection";
 import MyStackSection from "./MyStackSection";
 import LatestProjects from "./LatestProjects";
+import NextSectionBtn from "./Components/NextSectionBtn.js";
 
 // Scroll slides
 window.addEventListener("wheel", function (e) {
@@ -39,10 +40,11 @@ function App() {
   return (
     <div className="App">
       <SocialSideBar />
-      <Jumbotron />
-      <FrontEndSection />
-      <MyStackSection />
-      <LatestProjects />
+      <NextSectionBtn />
+      <Jumbotron position="0" />
+      <FrontEndSection position="1" />
+      <MyStackSection position="2" />
+      <LatestProjects position="3" />
     </div>
   );
 }
