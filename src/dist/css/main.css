@@ -335,6 +335,14 @@ h4 * {
   width: 100%;
 }
 
+.mt__projects__title {
+  font-weight: 700;
+}
+
+.mt__projects__title * {
+  font-weight: 700;
+}
+
 .projects__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,10 +398,14 @@ h4 * {
   aspect-ratio: 1;
   background: #c6daff;
   border-radius: 50%;
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
 }
 
 .mt__projects__index-dot--active {
   background: #0f62fe;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .mt__control-btn {
@@ -416,6 +428,21 @@ h4 * {
 
 .mt__control-btn:hover {
   background: #c6daff;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .mt__projects__control {
+    margin-top: 40px;
+  }
+  .mt__projects__index-dots {
+    gap: 10px;
+  }
+  .mt__projects__index-dot {
+    width: 7px;
+  }
+  .mt__control-btn img {
+    width: 12px;
+  }
 }
 
 /* Portrait and Landscape */

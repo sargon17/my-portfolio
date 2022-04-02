@@ -306,6 +306,12 @@ h4 * {
     // height: 300px;
   }
 }
+.mt__projects__title {
+  font-weight: $bold-text;
+  & * {
+    font-weight: $bold-text;
+  }
+}
 .projects__row {
   display: flex;
   justify-content: flex-start;
@@ -340,9 +346,11 @@ h4 * {
   aspect-ratio: 1;
   background: $mt__light-blue;
   border-radius: 50%;
+  transition: all 350ms ease-out;
 }
 .mt__projects__index-dot--active {
   background: $mt__blue;
+  transform: scale(1.2);
 }
 
 .mt__control-btn {
@@ -358,6 +366,20 @@ h4 * {
 .mt__control-btn:hover {
   // transform: scale(1.2);
   background: $mt__light-blue;
+}
+@media only screen and (max-device-width: 990px) {
+  .mt__projects__control {
+    margin-top: 40px;
+  }
+  .mt__projects__index-dots {
+    gap: 10px;
+  }
+  .mt__projects__index-dot {
+    width: 7px;
+  }
+  .mt__control-btn img {
+    width: 12px;
+  }
 }
 
 // --------------- / Projects Section ---------------

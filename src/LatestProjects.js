@@ -30,7 +30,7 @@ export default function LatestProjects() {
       <div className="container mt__container projects">
         <div className="row my-2 my-lg-5">
           <div className="col">
-            <h2>
+            <h2 className="mt__projects__title">
               My latest <span className="mt__t-color--blue">projects</span>
             </h2>
           </div>

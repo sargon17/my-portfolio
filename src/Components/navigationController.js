@@ -2,30 +2,39 @@ import react, { useState } from "react";
 import left from "../img/chevron-left.svg";
 import right from "../img/chevron-right.svg";
 
-function dotsNumber(number) {
-  let dots = [];
-  for (let i = 1; i <= number; i++) {
-    dots.push(<div className="mt__projects__index-dot" id={`dot-${i}`}></div>);
-  }
-  return dots;
-}
-
 export default function NavigationController(props) {
-  let initialCurrent = 1;
-
-  const [current, setCurrent] = useState(initialCurrent);
-  //   const [dots, setDots] = useState(dotsNumber(props.items));
+  const [current, setCurrent] = useState(1);
 
   const handleClick = (e) => {
-    setCurrent(dotIndex);
+    if (current + e < props.items + 1 && current + e > 0) {
+      setCurrent(current + e);
+    }
   };
+
+  function dotsNumber(number) {
+    let dots = [];
+    for (let i = 1; i <= number; i++) {
+      dots.push(
+        <div
+          className={
+            i === current
+              ? "mt__projects__index-dot mt__projects__index-dot--active"
+              : "mt__projects__index-dot"
+          }
+          id={`dot-${i}`}
+        ></div>
+      );
+    }
+    return dots;
+  }
+
   return (
     <div className="mt__projects__control">
       <a
         className="mt__control-btn"
         id="btn-left"
-        href={`#project-${current > 1 ? current : current + 1}`}
-        onClick={() => setCurrent((current) => current - 1)}
+        href={`#project-${current}`}
+        onClick={() => handleClick(-1)}
       >
         <img src={left} alt="left" />
       </a>
@@ -33,8 +42,8 @@ export default function NavigationController(props) {
       <a
         className="mt__control-btn"
         id="btn-right"
-        href={`#project-${current < 3 ? current : current - 1}`}
-        onClick={handleClick(1)}
+        href={`#project-${current}`}
+        onClick={() => handleClick(1)}
       >
         <img src={right} alt="right" />
       </a>
