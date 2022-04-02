@@ -11,7 +11,6 @@ import NextSectionBtn from "./Components/NextSectionBtn.js";
 window.addEventListener("wheel", function (e) {
   let windowHight = window.innerHeight;
   let currentPosition = window.scrollY;
-
   if (currentPosition % windowHight === 0) {
     if (e.deltaY > 0) {
       this.window.scrollTo({
