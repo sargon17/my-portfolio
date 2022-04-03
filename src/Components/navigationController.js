@@ -4,24 +4,18 @@ import left from "../img/chevron-left.svg";
 import right from "../img/chevron-right.svg";
 
 export default function NavigationController(props) {
-  const [current, setCurrent] = useState(1);
-
+  const [current, setCurrent] = useState(0);
 
   const handleClick = (e) => {
-    if (current + e < props.items + 1 && current + e > 0) {
+    console.log("e", e);
+    if (current + e < props.items && current + e >= 0) {
       setCurrent(current + e);
-    } else if (current + e > props.items) {
-      setCurrent(1);
-    } else if (current + e < 1) {
-      setCurrent(props.items);
+    } else if (current + e >= props.items - 1) {
+      setCurrent(0);
+    } else if (current + e < 0) {
+      setCurrent(props.items - 1);
     }
   };
-
-  // const handleVisibility = () => {
-  //   const timer = setInterval(() => {
-  //     document.querySelector("#btn-right").click();
-  //   }, 4000);
-  // };
 
   function dotsNumber(number) {
     let dots = [];
@@ -40,25 +34,53 @@ export default function NavigationController(props) {
     return dots;
   }
 
+  function slideProject() {
+    console.log(current);
+    let element = document.querySelector(".projects__row");
+    let maxWidth = element.scrollWidth;
+    let childWhidth = element.children[0].offsetWidth;
+    let childNumber = element.children.length;
+    let difference = (maxWidth - childWhidth * childNumber) / (childNumber - 1);
+
+    let coordinates = [];
+    for (let index = 0; index < props.items; index++) {
+      let translate = (childWhidth + difference) * index;
+      coordinates.push(index * translate);
+    }
+    console.log("debug == coordinates", coordinates);
+    console.log("debug == coordinates", coordinates[current]);
+
+    element.scrollTo({
+      top: 0,
+      left: coordinates[current],
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="mt__projects__control">
-      <a
+      <div
         className="mt__control-btn"
         id="btn-left"
-        href={`#project-${current}`}
-        onClick={() => handleClick(-1)}
+        onClick={() => {
+          handleClick(-1);
+          slideProject();
+        }}
       >
         <img src={left} alt="left" />
-      </a>
+      </div>
       <div className="mt__projects__index-dots">{dotsNumber(props.items)}</div>
-      <a
+      <div
         className="mt__control-btn"
         id="btn-right"
-        href={`#project-${current}`}
-        onClick={() => handleClick(1)}
+        href=""
+        onClick={() => {
+          handleClick(1);
+          slideProject();
+        }}
       >
         <img src={right} alt="right" />
-      </a>
+      </div>
     </div>
   );
 }
