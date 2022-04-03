@@ -1,6 +1,7 @@
 import train_img from "../img/train-ticket-project.png";
 import font_ratio_img from "../img/font-ratio-project.jpg";
 import mine_field_img from "../img/mine-field-project.png";
+import portfolio from "../img/portfolio.png";
 
 const projects = [
   {
@@ -14,19 +15,54 @@ const projects = [
     tech: [
       {
         name: "Figma",
-        style: "pink",
+        style: "blue",
       },
       {
         name: "HTML5",
         style: "orange",
       },
       {
-        name: "CSS3",
+        name: "SASS",
+        style: "pink",
+      },
+      {
+        name: "JavaScript",
+        style: "yellow",
+      },
+    ],
+  },
+  {
+    key: "personal-portfolio-project",
+    title: "Portfolio",
+    img: portfolio,
+    subtitle: "Personal portfolio project.",
+    text: "My personal portfolio, made with React.js, JavaScript, Sass and Bootstrap, which is fully responsive & designed by Me.",
+    liveLink: "https://sargon17.github.io/my-portfolio/",
+    githubLink: "https://github.com/sargon17/my-portfolio",
+    tech: [
+      {
+        name: "Figma",
+        style: "blue",
+      },
+      {
+        name: "HTML5",
+        style: "orange",
+      },
+      {
+        name: "SASS",
+        style: "pink",
+      },
+      {
+        name: "React.js",
         style: "blue",
       },
       {
         name: "JavaScript",
         style: "yellow",
+      },
+      {
+        name: "Bootstrap",
+        style: "purple",
       },
     ],
   },
