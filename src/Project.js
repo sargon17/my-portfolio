@@ -2,7 +2,9 @@ import React from "react";
 import StackTag from "./StackTag";
 
 function getStack(stack) {
+  // console.log(stack);
   let stackLogo = stack.map((item) => {
+    console.log(item);
     return <StackTag tech={item.name} style={item.style} />;
   });
   return stackLogo;
@@ -10,7 +12,7 @@ function getStack(stack) {
 
 export default function Project(props) {
   return (
-    <div className="project" id={props.index}>
+    <div className="project" id={props.index} key={props.key}>
       <div className="row justify-content-center justify-content-md-start">
         <div className="col-12 col-sm-10 col-md-8 col-lg-5">
           <a href={props.liveLink}>

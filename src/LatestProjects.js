@@ -11,7 +11,7 @@ export default function LatestProjects(props) {
       return (
         <Project
           index={`project-${index}`}
-          key={item.key}
+          key={`project-${index}`}
           title={item.title}
           img={item.img}
           subtitle={item.subtitle}
