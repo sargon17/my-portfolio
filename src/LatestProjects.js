@@ -4,6 +4,8 @@ import projects from "./data/projectsData.js";
 import NavigationController from "./Components/navigationController";
 
 export default function LatestProjects(props) {
+  const [current, setCurrent] = useState(1);
+
   function getProjects(projects) {
     let index = 0;
     let project = projects.map((item) => {
@@ -19,6 +21,7 @@ export default function LatestProjects(props) {
           liveLink={item.liveLink}
           githubLink={item.githubLink}
           tech={item.tech}
+          visibility={index === current ? "project project--active" : "project"}
         />
       );
     });
@@ -36,7 +39,11 @@ export default function LatestProjects(props) {
           </div>
         </div>
         <div className="projects__row">{getProjects(projects)}</div>
-        <NavigationController items={projects.length} />
+        <NavigationController
+          items={projects.length}
+          current={current}
+          setCurrent={setCurrent}
+        />
       </div>
     </div>
   );

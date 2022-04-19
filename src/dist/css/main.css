@@ -144,6 +144,8 @@ h4 * {
 
 .mt__next-section__btn-wrapper--hidden {
   opacity: 0;
+  height: 1vh;
+  display: none;
 }
 
 .mt__next-section__btn-wrapper a {
@@ -164,6 +166,12 @@ h4 * {
 .mt__next-section__btn-wrapper a:hover .fa-chevron-down {
   font-size: 38px;
   color: #0f62fe;
+}
+
+@media screen and (max-width: 500px) {
+  .mt__next-section__btn-wrapper {
+    display: none;
+  }
 }
 
 @-webkit-keyframes bounce {
@@ -351,18 +359,18 @@ h4 * {
 }
 
 .projects__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  overflow: hidden;
-  gap: 20vw;
+  position: relative;
+  height: 50vh;
+}
+
+@media screen and (max-device-width: 990px) {
+  .projects__row {
+    height: 70vh;
+  }
+  .mt__projects__control {
+    margin: 0px;
+  }
 }
 
 .mt__projects__control {
@@ -377,6 +385,7 @@ h4 * {
           align-items: center;
   gap: 15px;
   margin: 20px;
+  z-index: 5;
 }
 
 .project {
@@ -384,6 +393,19 @@ h4 * {
       flex-shrink: 0;
   width: 100%;
   padding: 0 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project--active {
+  opacity: 1;
+  z-index: 2;
 }
 
 .mt__projects__index-dots {
@@ -430,6 +452,8 @@ h4 * {
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .mt__control-btn:hover {
@@ -438,7 +462,7 @@ h4 * {
 
 @media only screen and (max-device-width: 990px) {
   .mt__projects__control {
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .mt__projects__index-dots {
     gap: 10px;
@@ -446,8 +470,12 @@ h4 * {
   .mt__projects__index-dot {
     width: 7px;
   }
+  .mt__control-btn {
+    height: 25px;
+    width: 25px;
+  }
   .mt__control-btn img {
-    width: 12px;
+    width: 24px;
   }
 }
 
