@@ -13,6 +13,7 @@ import wordpress_logo from "../img/wordpress.svg";
 import sass_logo from "../img/sass-logo 1.svg";
 import bootstrap from "../img/bootstrap.svg";
 import vue from "../img/vue-icon.svg";
+import mui from "../img/mui.svg";
 
 const stackData = {
   design: [
@@ -67,6 +68,11 @@ const stackData = {
       name: "react",
       link: "https://reactjs.org/",
       img: react_logo,
+    },
+    {
+      name: "mui",
+      link: "https://mui.com/",
+      img: mui,
     },
     {
       name: "vue",
