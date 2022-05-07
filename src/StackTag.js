@@ -4,9 +4,9 @@ export default function stackTag(props) {
   let style = `mt__tag mt__tag--${props.style}`;
   return (
     <div className="col col-auto">
-      <a href="#" className={style}>
+      <p href="#" className={style}>
         {props.tech}
-      </a>
+      </p>
     </div>
   );
 }
