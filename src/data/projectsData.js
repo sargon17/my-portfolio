@@ -2,8 +2,40 @@ import train_img from "../img/train-ticket-project.png";
 import font_ratio_img from "../img/font-ratio-project.jpg";
 import mine_field_img from "../img/mine-field-project.png";
 import portfolio from "../img/portfolio.png";
+import metgram from "../img/metgram.png";
 
 const projects = [
+  {
+    key: "metgram-project",
+    title: "Metgram",
+    img: metgram,
+    subtitle: "Personal project.",
+    text: "The Metgram app allows a user to view pieces from the Metropolitan Museum of Art from all around the world. The app is built by using React and Material UI for React and is powered by the 'Metropolitan Museum of Art' public API. The app is fully responsive, works on any device and is designed by me.",
+    liveLink: "https://sargon17.github.io/metgram/",
+    githubLink: "https://github.com/sargon17/metgram",
+    tech: [
+      {
+        name: "React",
+        style: "purple",
+      },
+      {
+        name: "Material UI",
+        style: "blue",
+      },
+      {
+        name: "SASS",
+        style: "pink",
+      },
+      {
+        name: "Figma",
+        style: "blue",
+      },
+      {
+        name: "HTML5",
+        style: "orange",
+      },
+    ],
+  },
   {
     key: "font-ratio-project",
     title: "Font ratio calculator",
