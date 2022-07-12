@@ -302,6 +302,19 @@ h4 * {
   }
 }
 
+.stack-img {
+  max-width: 48px;
+  max-height: 48px;
+  width: 48px;
+  overflow: hidden;
+
+  a {
+    img {
+      width: 100%;
+    }
+  }
+  // width: 12vw;
+}
 // --------------- / Tecnology Stack Section ---------------
 // --------------- Projects Section ---------------
 .projects {
@@ -486,10 +499,6 @@ h4 * {
         transform: scale(1.2);
       }
     }
-  }
-  .stack-img {
-    width: 36px;
-    // width: 12vw;
   }
 }
 

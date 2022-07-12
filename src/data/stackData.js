@@ -47,57 +47,72 @@ const stackData = {
     {
       name: "git",
       link: "https://git-scm.com/",
-      img: git_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Git.svg",
     },
     {
       name: "html",
       link: "https://www.w3.org/TR/html5/",
-      img: html_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg",
     },
     {
       name: "css",
       link: "https://www.w3.org/Style/CSS/",
-      img: css_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg",
     },
     {
       name: "js",
       link: "https://www.javascript.com/",
-      img: js_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg",
     },
     {
       name: "react",
       link: "https://reactjs.org/",
-      img: react_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Light.svg",
+    },
+    {
+      name: "redux",
+      link: "https://redux.js.org/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Redux.svg",
     },
     {
       name: "mui",
       link: "https://mui.com/",
-      img: mui,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI-Light.svg",
+    },
+    {
+      name: "php",
+      link: "https://www.php.net/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/PHP-Light.svg",
+    },
+    {
+      name: "Laravel",
+      link: "https://laravel.com/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Laravel-Light.svg",
+    },
+    {
+      name: "MySQL",
+      link: "https://www.mysql.com/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Light.svg",
     },
     {
       name: "vue",
       link: "https://vuejs.org/",
-      img: vue,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/VueJS-Light.svg",
     },
     {
       name: "vsc",
       link: "https://code.visualstudio.com/",
-      img: vsc_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/VSCode-Light.svg",
     },
     {
       name: "sass",
       link: "https://sass-lang.com/",
-      img: sass_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Sass.svg",
     },
     {
       name: "bootstrap",
       link: "https://getbootstrap.com/",
-      img: bootstrap,
-    },
-    {
-      name: "wordpress",
-      link: "https://wordpress.org/",
-      img: wordpress_logo,
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Bootstrap.svg",
     },
   ],
 };

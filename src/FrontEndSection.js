@@ -7,7 +7,7 @@ export default function FrontEndSection(props) {
         <div className="row">
           <div className="col-12 col-md-10">
             <h2 className="mt__t-color--white">
-              I am a <span className="mt__t-color--blue">Front-End</span> Web
+              I am a <span className="mt__t-color--blue">Full-Stack</span> Web
               Developer
             </h2>
           </div>
