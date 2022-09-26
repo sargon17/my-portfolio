@@ -3,17 +3,9 @@ import adobe from "../img/adobe_creative-cloud.svg";
 import photoshop from "../img/adobe_photoshop.svg";
 import illustrator from "../img/adobe_illustrator.svg";
 import lightroom from "../img/adobe_lightroom.svg";
-import git_logo from "../img/Component 1.svg";
-import html_logo from "../img/html_5.svg";
-import css_logo from "../img/css_3.svg";
-import js_logo from "../img/js.svg";
-import react_logo from "../img/react.svg";
-import vsc_logo from "../img/vs_code.svg";
-import wordpress_logo from "../img/wordpress.svg";
-import sass_logo from "../img/sass-logo 1.svg";
-import bootstrap from "../img/bootstrap.svg";
-import vue from "../img/vue-icon.svg";
-import mui from "../img/mui.svg";
+
+// library of tech logos
+// https://github.com/tandpfun/skill-icons
 
 const stackData = {
   design: [
@@ -80,6 +72,16 @@ const stackData = {
       img: "https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI-Light.svg",
     },
     {
+      name: "node.js",
+      link: "https://nodejs.org/en/about/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Light.svg",
+    },
+    {
+      name: "express.js",
+      link: "https://expressjs.com/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/ExpressJS-Light.svg",
+    },
+    {
       name: "php",
       link: "https://www.php.net/",
       img: "https://github.com/tandpfun/skill-icons/raw/main/icons/PHP-Light.svg",
@@ -88,6 +90,11 @@ const stackData = {
       name: "Laravel",
       link: "https://laravel.com/",
       img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Laravel-Light.svg",
+    },
+    {
+      name: "MongoDB",
+      link: "https://www.mongodb.com/it-it",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/MongoDB.svg",
     },
     {
       name: "MySQL",
@@ -108,6 +115,11 @@ const stackData = {
       name: "sass",
       link: "https://sass-lang.com/",
       img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Sass.svg",
+    },
+    {
+      name: "tailwind",
+      link: "https://tailwindcss.com/",
+      img: "https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Light.svg",
     },
     {
       name: "bootstrap",
