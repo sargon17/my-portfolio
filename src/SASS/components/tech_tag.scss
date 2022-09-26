@@ -1,0 +1,68 @@
+@import "../variables";
+.mt__tag {
+  background: inherit;
+  border-radius: 10px;
+  font-size: 1.618rem;
+  padding: 0 1em;
+  transition: all 0.35s ease-out;
+  text-decoration: none;
+  cursor: unset;
+  user-select: none;
+
+  &--blue {
+    color: $mt__blue;
+    border: 1px solid $mt__blue;
+    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__blue, $lightness: -20%, $alpha:
+          -0.6);
+  }
+  &--blue:hover {
+    background: $mt__blue;
+    color: $text-color-white;
+  }
+  &--pink {
+    color: $mt__pink;
+    border: 1px solid $mt__pink;
+    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__pink, $lightness: -20%, $alpha:
+          -0.6);
+  }
+  &--pink:hover {
+    background: $mt__pink;
+    color: $text-color-white;
+  }
+  &--orange {
+    color: $mt__orange;
+    border: 1px solid $mt__orange;
+    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__orange, $lightness:
+          -20%, $alpha: -0.6);
+  }
+  &--orange:hover {
+    background: $mt__orange;
+    color: $text-color-white;
+  }
+  &--purple {
+    color: $mt__purple;
+    border: 1px solid $mt__purple;
+    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__purple, $lightness:
+          -20%, $alpha: -0.6);
+  }
+  &--purple:hover {
+    background: $mt__purple;
+    color: $text-color-white;
+  }
+  &--yellow {
+    color: $mt__yellow;
+    border: 1px solid $mt__yellow;
+    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__yellow, $lightness:
+          -20%, $alpha: -0.6);
+  }
+  &--yellow:hover {
+    background: $mt__yellow;
+    color: $text-color-white;
+  }
+}
+
+@media only screen and (max-device-width: 360px) {
+  .mt__tag {
+    font-size: 12px;
+  }
+}
