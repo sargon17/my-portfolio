@@ -93,7 +93,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: none;
 }
 
 * {
@@ -181,25 +180,25 @@ h4 * {
 
 @-webkit-keyframes cursor {
   0% {
-    background-color: white;
+    opacity: 0;
   }
   50% {
-    background-color: #e0e0e0;
+    opacity: 1;
   }
   100% {
-    background-color: white;
+    opacity: 0;
   }
 }
 
 @keyframes cursor {
   0% {
-    background-color: white;
+    opacity: 0;
   }
   50% {
-    background-color: #e0e0e0;
+    opacity: 1;
   }
   100% {
-    background-color: white;
+    opacity: 0;
   }
 }
 

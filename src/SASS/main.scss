@@ -75,13 +75,13 @@ h4 * {
 }
 @keyframes cursor {
   0% {
-    background-color: white;
+    opacity: 0;
   }
   50% {
-    background-color: $text-color-grey;
+    opacity: 1;
   }
   100% {
-    background-color: white;
+    opacity: 0;
   }
 }
 
