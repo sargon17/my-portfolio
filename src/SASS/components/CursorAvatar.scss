@@ -1,0 +1,16 @@
+@import "../variables";
+
+.cursor {
+  position: absolute;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  // border: 1px solid $mt__blue;
+  background-color: white;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

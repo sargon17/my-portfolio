@@ -79,6 +79,23 @@
   }
 }
 
+.cursor {
+  position: absolute;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -100;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: none;
+}
+
 * {
   font-family: "IBM Plex Mono", monospace;
   -webkit-font-feature-settings: "salt" on;
