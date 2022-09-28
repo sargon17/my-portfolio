@@ -12,7 +12,7 @@ export default function Jumbotron(props) {
   const [text, setText] = useState("");
   const [name, setName] = useState("");
 
-  const typingAnimation = () => {
+  const typingAnimation = async () => {
     setText("");
     setName("");
     let txt = "Hello, my name is ";
@@ -24,20 +24,27 @@ export default function Jumbotron(props) {
 
     // write hello text
     for (let i = 0; i < txt.length; i++) {
-      // randomSpeed = Math.floor(Math.random() * 200) + 100;
-      setTimeout(function () {
-        setText((text) => text + txt.charAt(i));
-      }, randomSpeed * i);
+      randomSpeed = Math.floor(Math.random() * 200) + 100;
+      await new Promise((resolve) =>
+        setTimeout(function () {
+          setText((text) => text + txt.charAt(i));
+          resolve();
+        }, randomSpeed)
+      );
     }
 
     // write name
     for (let i = 0; i < myName.length; i++) {
-      // randomSpeed = Math.floor(Math.random() * 200) + 100;
-      setTimeout(function () {
-        setName((name) => name + myName.charAt(i));
-      }, randomSpeed * (i + txt.length));
+      randomSpeed = Math.floor(Math.random() * 200) + 100;
+      await new Promise((resolve) =>
+        setTimeout(function () {
+          setName((name) => name + myName.charAt(i));
+          resolve();
+        }, randomSpeed)
+      );
     }
   };
+
   useEffect(() => {
     typingAnimation();
   }, []);
