@@ -4,7 +4,7 @@ import StackTag from "./StackTag";
 function getStack(stack) {
   // console.log(stack);
   let stackLogo = stack.map((item) => {
-    console.log(item);
+    // console.log(item);
     return <StackTag tech={item.name} style={item.style} />;
   });
   return stackLogo;

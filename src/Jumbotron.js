@@ -15,8 +15,8 @@ export default function Jumbotron(props) {
   const typingAnimation = async () => {
     setText("");
     setName("");
-    let txt = "Hello, my name is ";
-    let myName = "Mykhaylo";
+    const txt = "Hello, my name is ";
+    const myName = "Mykhaylo";
 
     let randomSpeed = Math.floor(Math.random() * 200) + 100;
 
@@ -35,7 +35,7 @@ export default function Jumbotron(props) {
 
     // write name
     for (let i = 0; i < myName.length; i++) {
-      randomSpeed = Math.floor(Math.random() * 200) + 100;
+      randomSpeed = Math.floor(Math.random() * 50) + 100;
       await new Promise((resolve) =>
         setTimeout(function () {
           setName((name) => name + myName.charAt(i));
@@ -43,9 +43,14 @@ export default function Jumbotron(props) {
         }, randomSpeed)
       );
     }
+
+    setText(txt);
+    setName(myName);
   };
 
   useEffect(() => {
+    setText("");
+    setName("");
     typingAnimation();
   }, []);
 
@@ -90,9 +95,21 @@ export default function Jumbotron(props) {
             left: `${cursor.x}px`,
             top: `${cursor.y}px`,
             opacity: isPhotoVisible ? 1 : 0,
-            backgroundImage: `url(${profilePhoto})`,
           }}
-        ></div>
+        >
+          <div
+            className="background"
+            style={{
+              backgroundImage: `url(${profilePhoto})`,
+            }}
+          ></div>
+          <svg viewBox="0 0 200 200" width="200" height="200">
+            <circle cx={100} cy={100} r={80} fill="none" id="curve" />
+            <text fontSize={20}>
+              <textPath xlinkHref="#curve">Call me Michael</textPath>
+            </text>
+          </svg>
+        </div>
       </div>
     </>
   );
