@@ -13,27 +13,47 @@ export default function SocialSideBar() {
       </div>
       <ul>
         <li>
-          <a href="https://instagram.com/tymofyeyev?utm_medium=copy_link">
+          <a
+            href="https://instagram.com/tymofyeyev?utm_medium=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={instagram}></img>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mykhaylo-tymofyeyev">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/mykhaylo-tymofyeyev"
+          >
             <img src={linkedin}></img>
           </a>
         </li>
         <li>
-          <a href="https://github.com/sargon17">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/sargon17"
+          >
             <img src={GitHub}></img>
           </a>
         </li>
         <li>
-          <a href="https://t.me/Mykhaylo17">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://t.me/Mykhaylo17"
+          >
             <img src={telegram}></img>
           </a>
         </li>
         <li>
-          <a href="mailto:mykhaylo.tymofyeyev@gmail.com">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:mykhaylo.tymofyeyev@gmail.com"
+          >
             <img src={gmail}></img>
           </a>
         </li>
