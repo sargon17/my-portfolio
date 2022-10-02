@@ -1,3 +1,7 @@
+.mt__contact-page {
+  position: relative;
+}
+
 .mt__contact-page .title {
   font-size: 1.5rem;
   font-weight: 400;
@@ -52,5 +56,31 @@
 .mt__contact-page .contact-list .unhovered * {
   font-size: 1.6rem;
   opacity: 0.5;
+}
+
+.mt__contact-page .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262626;
+  color: #e0e0e0;
+  padding: 0.5rem 0;
+}
+
+.mt__contact-page .footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=ContactPage.css.map */

@@ -1,6 +1,7 @@
 @import "../variables";
 
 .mt__contact-page {
+  position: relative;
   .title {
     font-size: 1.5rem;
     font-weight: 400;
@@ -46,6 +47,25 @@
         font-size: 1.6rem;
         opacity: 0.5;
       }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-darker;
+    color: $text-color-grey;
+    padding: 0.5rem 0;
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
     }
   }
 }

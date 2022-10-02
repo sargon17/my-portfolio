@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function ContactPage(props) {
   const [selected, setSelected] = useState("");
+  let currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -71,6 +72,9 @@ export default function ContactPage(props) {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="footer">
+            <p>Mykhaylo Tymofyeyev © {currentYear}</p>
           </div>
         </div>
       </div>
