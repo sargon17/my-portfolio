@@ -5,9 +5,16 @@ import GitHub from "./img/GitHub.svg";
 import telegram from "./img/telegram.svg";
 import gmail from "./img/gmail.svg";
 
-export default function SocialSideBar() {
+export default function SocialSideBar({ display }) {
   return (
-    <div className="side-bar  d-none d-md-flex">
+    <div
+      // className="side-bar  d-none d-md-flex"
+      className={
+        display
+          ? "side-bar  d-none d-md-flex"
+          : "side-bar side-bar--hidden  d-none d-md-flex "
+      }
+    >
       <div className="side-bar__item">
         <h5 className="mt__t-color--blue">Contact me here:</h5>
       </div>
