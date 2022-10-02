@@ -5,6 +5,7 @@ import SocialSideBar from "./SocialSideBar";
 import FrontEndSection from "./FrontEndSection";
 import MyStackSection from "./MyStackSection";
 import LatestProjects from "./LatestProjects";
+import ContactPage from "./ContactPage";
 import NextSectionBtn from "./Components/NextSectionBtn.js";
 
 // Scroll slides
@@ -44,6 +45,7 @@ function App() {
       <FrontEndSection position="1" />
       <MyStackSection position="2" />
       <LatestProjects position="3" />
+      <ContactPage position="4" />
     </div>
   );
 }
