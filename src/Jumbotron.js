@@ -103,9 +103,22 @@ export default function Jumbotron(props) {
               backgroundImage: `url(${profilePhoto})`,
             }}
           ></div>
+        </div>
+        <div
+          className="cursor"
+          style={{
+            left: `${cursor.x}px`,
+            top: `${cursor.y}px`,
+            opacity: isPhotoVisible ? 1 : 0,
+            zIndex: 1000,
+          }}
+        >
           <svg viewBox="0 0 200 200" width="200" height="200">
             <circle cx={100} cy={100} r={80} fill="none" id="curve" />
-            <text fontSize={20}>
+            <text fontSize={20} x={0}>
+              <textPath xlinkHref="#curve">Call me Michael</textPath>
+            </text>
+            <text fontSize={20} x={250}>
               <textPath xlinkHref="#curve">Call me Michael</textPath>
             </text>
           </svg>
