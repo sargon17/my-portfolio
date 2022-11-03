@@ -237,6 +237,65 @@
   padding: 0;
 }
 
+.side-bar {
+  background: #f8faff;
+  padding: 30px 22px;
+  border-radius: 30px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-bar ul {
+  gap: 19px;
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-bar a {
+  aspect-ratio: 1;
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-bar a svg {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-bar a svg path {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  fill: #9dbfff;
+}
+
+.side-bar a:hover svg path {
+  fill: #0f62fe;
+}
+
+.side-bar--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 * {
   font-family: "IBM Plex Mono", monospace;
   -webkit-font-feature-settings: "salt" on;
@@ -255,6 +314,19 @@ ul {
 
 body {
   color: #161616;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 100px;
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
 }
 
 h1,
@@ -472,46 +544,6 @@ h4 * {
   background-color: #e0e0e0;
   -webkit-animation: cursor 0.9s infinite;
           animation: cursor 0.9s infinite;
-}
-
-.side-bar {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.side-bar__item {
-  mix-blend-mode: color-burn !important;
-}
-
-.side-bar a {
-  aspect-ratio: 1;
-  display: block;
-  padding: 6px;
-  border-radius: 8px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.side-bar a:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-}
-
-.side-bar--hidden {
-  opacity: 0;
-  visibility: hidden;
 }
 
 .my-stack-section .stack-wrapper h3 {

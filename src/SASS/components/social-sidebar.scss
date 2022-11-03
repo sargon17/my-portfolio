@@ -1,0 +1,49 @@
+@import "../variables";
+
+.side-bar {
+  background: $blue_clear;
+  padding: 30px 22px;
+  border-radius: 30px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease-in-out;
+
+  ul {
+    gap: 19px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    aspect-ratio: 1;
+    display: block;
+    transition: all 0.3s ease-out;
+
+    svg {
+      transition: all 0.3s ease-out;
+      path {
+        transition: all 0.3s ease-out;
+        fill: $blue_normal;
+      }
+    }
+
+    &:hover {
+      //   transform: scale(1.09);
+      svg {
+        path {
+          fill: $mt__blue;
+        }
+      }
+    }
+  }
+}
+.side-bar--hidden {
+  opacity: 0;
+  visibility: hidden;
+}

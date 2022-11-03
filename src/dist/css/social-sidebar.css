@@ -1,0 +1,59 @@
+.side-bar {
+  background: #f8faff;
+  padding: 30px 22px;
+  border-radius: 30px;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-bar ul {
+  gap: 19px;
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-bar a {
+  aspect-ratio: 1;
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-bar a svg {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-bar a svg path {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  fill: #9dbfff;
+}
+
+.side-bar a:hover svg path {
+  fill: #0f62fe;
+}
+
+.side-bar--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+/*# sourceMappingURL=social-sidebar.css.map */

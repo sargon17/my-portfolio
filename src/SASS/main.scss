@@ -3,6 +3,7 @@
 @import "components/CursorAvatar";
 
 @import "pages/ContactPage";
+@import "./components/social-sidebar";
 
 * {
   font-family: "IBM Plex Mono", monospace;
@@ -17,12 +18,27 @@ ul {
   list-style: none;
 }
 
+html {
+}
+
 // General Stiles
 
 body {
   color: $text-color-black;
   // overflow: hidden;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 100px;
+  }
 }
+
+body::-webkit-scrollbar {
+  background: transparent;
+}
+
 h1,
 h1 * {
   font-size: $big-font;
@@ -186,41 +202,6 @@ h4 * {
 }
 
 // --------------- / Jumbotron Section ---------------
-
-// --------------- Side Bar Section ---------------
-.side-bar {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translate(0, -50%);
-  // display: flex;
-  flex-flow: column;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  // mix-blend-mode: color;
-
-  &__item {
-    mix-blend-mode: color-burn !important;
-  }
-
-  a {
-    aspect-ratio: 1;
-    display: block;
-    padding: 6px;
-    border-radius: 8px;
-    transition: all 0.2s ease-out;
-
-    &:hover {
-      transform: scale(1.09);
-    }
-  }
-}
-.side-bar--hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-// --------------- / Side Bar Section ---------------
 
 // --------------- Tecnology Stack Section ---------------
 .my-stack-section {
