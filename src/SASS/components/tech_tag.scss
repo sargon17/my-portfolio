@@ -11,53 +11,23 @@
 
   &--blue {
     color: $mt__blue;
-    border: 1px solid $mt__blue;
-    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__blue, $lightness: -20%, $alpha:
-          -0.6);
-  }
-  &--blue:hover {
-    background: $mt__blue;
-    color: $text-color-white;
+    background-color: #e1ebff;
   }
   &--pink {
     color: $mt__pink;
-    border: 1px solid $mt__pink;
-    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__pink, $lightness: -20%, $alpha:
-          -0.6);
-  }
-  &--pink:hover {
-    background: $mt__pink;
-    color: $text-color-white;
+    background-color: #ffdfed;
   }
   &--orange {
     color: $mt__orange;
-    border: 1px solid $mt__orange;
-    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__orange, $lightness:
-          -20%, $alpha: -0.6);
-  }
-  &--orange:hover {
-    background: $mt__orange;
-    color: $text-color-white;
+    background-color: #ffeae0;
   }
   &--purple {
     color: $mt__purple;
-    border: 1px solid $mt__purple;
-    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__purple, $lightness:
-          -20%, $alpha: -0.6);
-  }
-  &--purple:hover {
-    background: $mt__purple;
-    color: $text-color-white;
+    background-color: #f0e6fd;
   }
   &--yellow {
     color: $mt__yellow;
-    border: 1px solid $mt__yellow;
-    box-shadow: 0px 10px 6px -7px adjust-color($color: $mt__yellow, $lightness:
-          -20%, $alpha: -0.6);
-  }
-  &--yellow:hover {
-    background: $mt__yellow;
-    color: $text-color-white;
+    background-color: #fff7e1;
   }
 }
 

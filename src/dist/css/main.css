@@ -15,62 +15,27 @@
 
 .mt__tag--blue {
   color: #0f62fe;
-  border: 1px solid #0f62fe;
-  -webkit-box-shadow: 0px 10px 6px -7px rgba(1, 58, 166, 0.4);
-          box-shadow: 0px 10px 6px -7px rgba(1, 58, 166, 0.4);
-}
-
-.mt__tag--blue:hover {
-  background: #0f62fe;
-  color: #ffffff;
+  background-color: #e1ebff;
 }
 
 .mt__tag--pink {
   color: #ff006e;
-  border: 1px solid #ff006e;
-  -webkit-box-shadow: 0px 10px 6px -7px rgba(153, 0, 66, 0.4);
-          box-shadow: 0px 10px 6px -7px rgba(153, 0, 66, 0.4);
-}
-
-.mt__tag--pink:hover {
-  background: #ff006e;
-  color: #ffffff;
+  background-color: #ffdfed;
 }
 
 .mt__tag--orange {
   color: #fb5607;
-  border: 1px solid #fb5607;
-  -webkit-box-shadow: 0px 10px 6px -7px rgba(154, 51, 2, 0.4);
-          box-shadow: 0px 10px 6px -7px rgba(154, 51, 2, 0.4);
-}
-
-.mt__tag--orange:hover {
-  background: #fb5607;
-  color: #ffffff;
+  background-color: #ffeae0;
 }
 
 .mt__tag--purple {
   color: #8338ec;
-  border: 1px solid #8338ec;
-  -webkit-box-shadow: 0px 10px 6px -7px rgba(82, 17, 173, 0.4);
-          box-shadow: 0px 10px 6px -7px rgba(82, 17, 173, 0.4);
-}
-
-.mt__tag--purple:hover {
-  background: #8338ec;
-  color: #ffffff;
+  background-color: #f0e6fd;
 }
 
 .mt__tag--yellow {
   color: #ffbe0b;
-  border: 1px solid #ffbe0b;
-  -webkit-box-shadow: 0px 10px 6px -7px rgba(164, 120, 0, 0.4);
-          box-shadow: 0px 10px 6px -7px rgba(164, 120, 0, 0.4);
-}
-
-.mt__tag--yellow:hover {
-  background: #ffbe0b;
-  color: #ffffff;
+  background-color: #fff7e1;
 }
 
 @media only screen and (max-device-width: 360px) {
