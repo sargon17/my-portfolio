@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <SocialSideBar display={position === 4 ? false : true} />
-      <NextSectionBtn />
+      {/* <NextSectionBtn /> */}
       <Jumbotron position="0" />
       <FrontEndSection position="1" />
       <MyStackSection position="2" />

@@ -13,7 +13,7 @@ function getStack(stack) {
 export default function Project(props) {
   return (
     <div className={props.visibility} id={props.index} key={props.key}>
-      <div className="row justify-content-center justify-content-md-start">
+      <div className="row justify-content-center justify-content-md-start project__card">
         <div className="col-12 col-sm-10 col-md-8 col-lg-5 mb-2 mb-md-0">
           <a href={props.liveLink}>
             <img src={props.img} alt="" className="projects__image" />

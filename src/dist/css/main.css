@@ -261,6 +261,11 @@
   visibility: hidden;
 }
 
+.project__card {
+  background: #f8faff;
+  border-radius: 30px;
+}
+
 * {
   font-family: "IBM Plex Mono", monospace;
   -webkit-font-feature-settings: "salt" on;
@@ -314,6 +319,12 @@ h3 * {
 h4,
 h4 * {
   font-size: 1.618rem;
+}
+
+.text-accent {
+  font-weight: 700;
+  font-family: "IBM Plex Serif", serif;
+  font-style: italic;
 }
 
 .flex-component {

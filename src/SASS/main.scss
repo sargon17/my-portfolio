@@ -4,6 +4,7 @@
 
 @import "pages/ContactPage";
 @import "./components/social-sidebar";
+@import "./components/card";
 
 * {
   font-family: "IBM Plex Mono", monospace;
@@ -56,6 +57,12 @@ h3 * {
 h4,
 h4 * {
   font-size: 1.618rem;
+}
+
+.text-accent {
+  font-weight: 700;
+  font-family: "IBM Plex Serif", serif;
+  font-style: italic;
 }
 
 // --------------- Reusable Stiles ---------------

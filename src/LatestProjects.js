@@ -34,7 +34,8 @@ export default function LatestProjects(props) {
         <div className="row my-2 my-lg-5">
           <div className="col">
             <h2 className="mt__projects__title">
-              My latest <span className="mt__t-color--blue">projects</span>
+              Some{" "}
+              <span className="mt__t-color--blue text-accent">projects</span>
             </h2>
           </div>
         </div>
